@@ -1,0 +1,26 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "oligocompose"
+version = "0.2.0"
+authors = [
+  { name="Jamie Heather", email="jheather@mgh.harvard.edu" },
+]
+description = "A package to automatically generate oligonucleotide library pool sequences"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.scripts]
+oligocompose = "oligocompose.oligocompose:main"
+
+[project.urls]
+"Homepage" = "https://github.com/JamieHeather/oligocompose"
+"Bug Reports" = "https://github.com/JamieHeather/oligocompose/issues"
+"Source" = "https://github.com/pypa/sampleproject/"
